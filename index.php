@@ -14,7 +14,7 @@
         new Food(["Secco", "Umido"], ["Maxi", "Grande", "Medio", "Piccolo"], 21,50),
     ];
 
-    var_dump($foods);
+    var_dump($foods) ;
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +36,6 @@
         <?php } ?>
 
         <?php foreach( $foods as $food ) { ?>
-            <h2><?php echo $food->typology; ?></h2>
             <h4>Tipologia di alimentazione:</h4>
                 <?php foreach ($food->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
