@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__ . "/classes/Category.php";
     require_once __DIR__ . "/classes/Food.php";
+    require_once __DIR__ ."/classes/Toy.php";
 
     $categories = [
         new Category("Cane", ["Cocker Spaniel", "Labrador Retriever", "Golden Retriever", "Pitbull", "Bassotto",], ["male", "female"], ["adult", "puppy"]),
@@ -12,6 +13,10 @@
     $foods = [
         new Food(["Secco", "Umido"], ["Maxi", "Grande", "Medio", "Piccolo"], 43,50),
         new Food(["Secco", "Umido"], ["Maxi", "Grande", "Medio", "Piccolo"], 21,50),
+    ];
+    $toys = [
+        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 43,50),
+        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 21,50),
     ];
 
     var_dump($foods) ;
@@ -39,9 +44,18 @@
             <h4>Tipologia di alimentazione:</h4>
                 <?php foreach ($food->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
-                <?php } ?>               
+                <?php } ?>  
+                <h4>Formato:</h4> 
+                <?php foreach ($food->format as $form) { ?>
+                    <li><?php echo $form; ?></li>
+                <?php } ?>            
         <?php } ?>
-
+        <?php foreach( $toys as $toy ) { ?>
+            <h4>Giochi:</h4>
+                <?php foreach ($toy->typology as $typo) { ?>
+                    <li><?php echo $typo; ?></li>
+                <?php } ?>             
+        <?php } ?>
     </ul>
 </body>
 </html>
