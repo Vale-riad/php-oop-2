@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/Category.php";
+require_once __DIR__ ."/../traits/Typologyitem.php";
 class Toy extends Category{
     public $typology;
     public $format;
@@ -11,6 +12,7 @@ class Toy extends Category{
      $this->format = $format;
      $this->price = $price;
     }
+    
 }
 
 ?>
