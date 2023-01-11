@@ -2,6 +2,7 @@
     require_once __DIR__ . "/classes/Category.php";
     require_once __DIR__ . "/classes/Food.php";
     require_once __DIR__ ."/classes/Toy.php";
+    
 
     $categories = [
         new Category("Cane", ["Cocker Spaniel", "Labrador Retriever", "Golden Retriever", "Pitbull", "Bassotto",], ["male", "female"], ["adult", "puppy"]),
@@ -19,7 +20,7 @@
         new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 21,50),
     ];
 
-    var_dump($foods) ;
+    var_dump($toys) ;
 ?>
 
 <!DOCTYPE html>
