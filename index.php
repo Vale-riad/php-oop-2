@@ -56,9 +56,7 @@
                 <?php foreach ($toy->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
                 <?php } ?> 
-                <?php foreach ($toy->prices as $price) { ?>
-                    <li><?php echo $price; ?></li>
-                <?php } ?>
+                <li><?php echo $toy->price; ?></li>
                         
         <?php } ?>
     </ul>
