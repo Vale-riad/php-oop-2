@@ -13,12 +13,12 @@
     var_dump($categories);
 
     $foods = [
-        new Food(["Secco", "Umido"], ["Maxi", "Grande", "Medio", "Piccolo"], 43,50),
-        new Food(["Secco", "Umido"], ["Maxi", "Grande", "Medio", "Piccolo"], 21,50),
+        new Food(["Secco", "Umido"], ["Maxi", "Grande", "Medio", "Piccolo"], 43.50),
+        new Food(["Secco", "Umido"], ["Maxi", "Grande", "Medio", "Piccolo"], 21.50),
     ];
     $toys = [
-        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 0),
-        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 21,50),
+        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 10),
+        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 22222.999),
     ];
 
     var_dump($toys) ;
