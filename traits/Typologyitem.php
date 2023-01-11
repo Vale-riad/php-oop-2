@@ -9,4 +9,5 @@ trait Formatitem{
 trait Priceitem{
     public $price;
 }
+
 ?>

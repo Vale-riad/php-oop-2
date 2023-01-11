@@ -2,6 +2,7 @@
     require_once __DIR__ . "/classes/Category.php";
     require_once __DIR__ . "/classes/Food.php";
     require_once __DIR__ ."/classes/Toy.php";
+    require_once __DIR__ ."/traits/Typologyitem.php";
     
 
     $categories = [
@@ -16,7 +17,7 @@
         new Food(["Secco", "Umido"], ["Maxi", "Grande", "Medio", "Piccolo"], 21,50),
     ];
     $toys = [
-        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 43,50),
+        new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 0),
         new Toy(["Collari", "Masticativi"], ["Maxi", "Grande", "Medio", "Piccolo"], 21,50),
     ];
 
@@ -56,7 +57,7 @@
                 <?php foreach ($toy->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
                 <?php } ?> 
-                <li><?php echo $toy->price; ?></li>
+                <li><?php echo $toy->correctprice($price); ?></li>
                         
         <?php } ?>
     </ul>
