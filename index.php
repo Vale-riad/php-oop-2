@@ -55,7 +55,11 @@
             <h4>Giochi:</h4>
                 <?php foreach ($toy->typology as $typo) { ?>
                     <li><?php echo $typo; ?></li>
-                <?php } ?>             
+                <?php } ?> 
+                <?php foreach ($toy->prices as $price) { ?>
+                    <li><?php echo $price; ?></li>
+                <?php } ?>
+                        
         <?php } ?>
     </ul>
 </body>

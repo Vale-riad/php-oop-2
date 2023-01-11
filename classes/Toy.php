@@ -12,7 +12,12 @@ class Toy extends Category{
      $this->format = $format;
      $this->price = $price;
     }
-    
+    function correctprice($price){
+        if(!is_int($price)){
+            throw new Exception("inserire un importo corretto");
+        }
+        return $this->$price;
+    }
 }
 
 ?>
